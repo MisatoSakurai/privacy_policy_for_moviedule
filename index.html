@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>プライバシーポリシー - Moviedule</title>
   <meta name="description" content="Moviedule アプリのプライバシーポリシー">
+  <link rel="icon" href="icon.png" type="image/png">
   <style>
     :root {
       --bg: #fafafa;
@@ -32,8 +33,17 @@
       border-bottom: 1px solid var(--border);
       padding-bottom: 1.5rem;
       margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
     }
-    h1 {
+    .logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      object-fit: contain;
+    }
+    .header-text h1 {
       font-size: 1.5rem;
       font-weight: 600;
       margin: 0 0 0.25rem 0;
@@ -72,8 +82,11 @@
 <body>
   <div class="container">
     <header>
-      <h1>プライバシーポリシー</h1>
-      <p class="sub">Moviedule</p>
+      <img src="icon.png" alt="Moviedule" class="logo">
+      <div class="header-text">
+        <h1>プライバシーポリシー</h1>
+        <p class="sub">Moviedule</p>
+      </div>
     </header>
 
     <p>
@@ -119,7 +132,7 @@
 
     <h2>6. お問い合わせ</h2>
     <p>
-      本プライバシーポリシーや個人情報の取扱いについてご質問がある場合は、本アプリの開発者（リポジトリ管理者）までお問い合わせください。
+      本プライバシーポリシーや個人情報の取扱いについてご質問がある場合は、<a href="form.html">お問い合わせフォーム</a>よりご連絡ください。
     </p>
 
     <p class="updated">制定日・最終更新: 2025年2月8日</p>

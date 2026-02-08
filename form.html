@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ - Moviedule</title>
+  <meta name="description" content="Moviedule アプリへのお問い合わせ">
+  <link rel="icon" href="icon.png" type="image/png">
+  <style>
+    :root {
+      --bg: #fafafa;
+      --surface: #ffffff;
+      --text: #1a1a1a;
+      --text-muted: #5c5c5c;
+      --accent: #2563eb;
+      --border: #e5e5e5;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      object-fit: contain;
+    }
+    .header-text h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 0 0 0.25rem 0;
+      color: var(--text);
+    }
+    .sub {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+    .intro {
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+    .form-wrapper {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      min-height: 500px;
+    }
+    .form-wrapper iframe {
+      width: 100%;
+      height: 1200px;
+      border: none;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 1.5rem;
+      font-size: 0.875rem;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .back-link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="icon.png" alt="Moviedule" class="logo">
+      <div class="header-text">
+        <h1>お問い合わせ</h1>
+        <p class="sub">Moviedule</p>
+      </div>
+    </header>
+
+    <p class="intro">
+      ご質問・ご要望・不具合の報告などは、以下のフォームからお送りください。
+    </p>
+
+    <div class="form-wrapper">
+      <!-- Google Form の「埋め込み」で取得した iframe の src に差し替えてください -->
+      <!-- 例: https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true -->
+      <iframe 
+        src="https://docs.google.com/forms/d/e/1FAIpQLSdfalJvQ9cNZGzbhKaoQjWMxrEdydvv9RK1ELQI9YAZ4G9fpg/viewform?embedded=true" 
+        width="640" 
+        height="633" 
+        frameborder="0" 
+        marginheight="0" 
+        marginwidth="0">
+        読み込んでいます…
+      </iframe>
+    </div>
+
+    <a href="index.html" class="back-link">← プライバシーポリシーに戻る</a>
+  </div>
+</body>
+</html>
